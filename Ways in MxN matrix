@@ -1,0 +1,9 @@
+//find no. of ways in MxN matrix...
+
+int count(int m, int m){
+    if(m==1 || n==1){
+        return 1;
+    }
+
+    return count(m-1,n)+count(m,n-1);
+}

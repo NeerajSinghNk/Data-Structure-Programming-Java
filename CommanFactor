@@ -1,0 +1,27 @@
+
+import java.util.*;
+class TestClass {
+
+    static long findGcd(long a, long b){
+        long count=0;
+        for(long i=1;i<=a;i++){
+            if(a%i==0 && b%i==0)
+                count++;
+        }
+        return count;
+    }
+
+    public static void main(String args[] ) throws Exception {
+
+        Scanner sc = new Scanner(System.in);
+
+        while(sc.hasNextLong()){
+            long a = sc.nextLong();
+            long b = sc.nextLong();
+            System.out.println(findGcd(10, 15));
+        }
+
+        
+
+    }
+}
